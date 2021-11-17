@@ -6,7 +6,7 @@ async function fetchWithErrorHandling(
     method: 'GET',
     headers: {
       'x-rapidapi-host': 'tiktok33.p.rapidapi.com',
-      'x-rapidapi-key': 'cf53bbe90dmsh943748214b7ae1fp182448jsn939dece57c29',
+      'x-rapidapi-key': '33e79e976cmsh56b4b259b11ae0bp1e7032jsn0518414c7629',
     },
   },
 ) {
@@ -21,9 +21,9 @@ export function fetchPosts() {
 }
 
 export function fetchUserDetails(user) {
-  return fetchWithErrorHandling(`${BASE_URL}/user/info/${user}`);
+  return fetchWithErrorHandling(`${BASE_URL}user/info/${user}`);
 }
 
-export function fetchUserFeed(user) {
-  return fetchWithErrorHandling(`${BASE_URL}/user/feed/${user}`);
+export function fetchUserFeed() {
+  return fetchWithErrorHandling('http://localhost:3000/itemList');
 }

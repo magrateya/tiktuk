@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
-// import { ImCircleLeft } from 'react-icons/im';
-// import s from './GoBackBtn.module.css';
 
 export default function GoBackBtn({ onBackClick }) {
   return (
-    <button type="submit" onClick={onBackClick}>
-      {/* <ImCircleLeft style={{ marginRight: 8 }} /> */}
+    <button
+      type="submit"
+      onClick={onBackClick}
+      style={{
+        margin: '50px 0 50px 30px',
+        padding: '10px 20px',
+        textTransform: 'uppercase',
+      }}
+    >
       Go back
     </button>
   );
